@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+    <header>
+        <h1>Ghana Communicatuons And Technology University</h1>
+        <h2>(Registration Page For Submission Portal)</h2>
+    </header>
+    
+    <body>
+        <form action="courses.html">
+        <fieldset class="container">
+            <legend><image src="enter.png" width="80px"></legend>
+    
+              <p></p>
+              <fieldset class="name-password">
+                <div class="username">
+                 Name</br>
+                    <input class="text-box" type="text" placeholder="Full Name" name="full-name" id="full-name" required> 
+                    <p>
+                    <input class="text-box" type="text" placeholder="Enter Your Username" name="username" id="username" required>
+                    </p>                
+                </div>
+                
+                <br>
+                <div class="password">
+                    Password</br>
+                    <input class="text-box" type="password" placeholder="Enter Your New Password" name="password" id="password" required>    
+                    <p><input class="text-box" type="password" placeholder="Confirm Password" name="password" id="password" required></p>                
+                </div> 
+              
+    
+             <div class="class">
+                <select name="Program">
+                    <option value="Program"><strong>Program</strong></option>
+                    <option value="Cyber Security" required>Cyber Security</option>
+                </select>
+        
+                <select name="Level" required>
+                    <option value="level">Level</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                </select>
+        
+                <select name="Group" required>
+                    <option value="Group">groups</option>
+                    <option value="Group A">Group A</option>
+                    <option value="Group B">Group B</option>
+                    <option value="Group C">Group C</option>
+                    <option value="Group D">Group D</option>
+                    <option value="Group E">Group E</option>
+                </select>
+                </div></br>
+
+                <div class="personal">
+                    Gender<br>
+                    <label><input class="male" type="radio" name="male-female" id="male" value="male">Male</label>
+                    <label><input class="female" type="radio" name="male-female" id="femmale" value="male">Female</label>
+                </div>    
+
+            </fieldset>
+            <button class="register" type="submit">Register</button></a>
+            <button class="reset" type="reset">Reset</buttton>
+</body>
+</html>
