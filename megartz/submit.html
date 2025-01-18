@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <h1>SUBMISSION PAGE</h1>
+
+    <form action="successful.html">
+        <fieldset class="container">
+
+    <fieldset>
+        <legend>Student Details</legend>
+       <div class="student-details">
+         <label for="student-name">Enter Your Details Here</label></br>    
+           <input class="details" type="text" id="student-name" name="student-name" placeholder="Full Name" required>            
+           <input class="details" type="number" min="1000000000" id="Index-Number" name="Index-Number" placeholder="Index Number" inputmode="numeric" required>          
+          <input class="details" type="text" minlength="10" maxlength="14" placeholder="contact" id="contact" name="contact" required>
+        </div>
+    </fieldset>
+
+    <p><fieldset class="ass-type">
+        <legend>Assignment Type</legend>
+         <p><label><input type="radio" id="ind-assignment" value="ind-assignment" name="ass-type">Individual Assignment</style></label>
+
+         <label><input type="radio" id="grp-assignment" value="grp-assignment" name="ass-type">Group Assignment</p></label>
+    </fieldset></p>
+
+    <p>
+        <fieldset class="ass-number">
+           <legend>Assignment Number</legend>     
+           <p>Select appropriate number of the Assignment  <input type="number" min="1" required></p>
+        </fieldset>
+    </p>
+
+<fieldset class="sub-date">
+    <legend>Date & Time Of Submission</legend>
+    <p>Select today's date and current time  <input style="width: 25%;" type="datetime-local" required></p>   
+</fieldset>
+
+<p>
+<fieldset class="file">
+    <legend>Upload Assignment File Here</legend>
+    <p><input type="file" required></p>
+</fieldset>  
+</p>
+
+    <fieldset class="comments">
+        <br>
+        <legend>Comments</legend>
+        <label for="comment">Leave a comment</label><br>
+         <p></p><textarea style="width: 33%;" name="comment" id="comment" placeholder="Type your comments here..."></textarea>
+        </br><br></br>
+    </fieldset>
+
+  <div class="send">
+    <br>
+    <a href="successful.html">
+    <button type="submit"><strong>Submit</strong></button>
+</a>
+    <button type="reset"><strong>Reset</strong></button>
+    </br>
+  </div>
+</fieldset>
+</form>
+</body>
+</html>

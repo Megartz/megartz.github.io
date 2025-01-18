@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>   
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "") {
+                alert("Username must be filled out");
+                return false;
+            }
+            
+            if (password === "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long");
+                return false;
+            }
+
+            // Authenticate username and password
+            if (username === "Admin" && password === "Submission" ) {
+                alert("Welcome to GCTU submission portal");
+                return true;
+            } else {
+                alert("Incorrect username or password");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<header>
+    <h1>Ghana Communications And Technology University</h1>
+    <h2>(Login Page For Submission Portal)</h2>
+</header>
+
+<body>
+    <form action="courses.html" onsubmit="return validateForm()">
+    <fieldset class="container">
+        <legend><img src="gctu-logo-story-768x461_Nero AI_background_remover_edit.png" width="150px"></legend>
+
+          <p></p>
+          <fieldset class="name-password">
+            <div class="username">
+                <img src="pngwing.com.png" width="25px" alt="User icon">
+                <input type="text" inputmode="kana-name" placeholder="Enter Username" name="username" id="username" required>                
+            </div>
+            
+            <br>
+            <div class="password">
+                <img src="pass.png" width="25px" alt="PIN icon">
+                <input type="password" minlength="8" placeholder="Enter Password" name="password" id="password" required>                
+            </div> 
+        </br>
+        </fieldset>
+
+                <div class="class">
+                    <fieldset class="class">
+                    <img src="class.png" width="25px" alt="class icon"></br>
+
+            <select name="Program" required>
+                <option value="Program"><strong>Program</strong></option>
+                <option value="Cyber Security" required>Cyber Security</option>
+            </select>
+    
+            <select name="Level" required>
+                <option value="level">Level</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+            </select>
+    
+            <select name="Group" required>
+                <option value="Group">groups</option>
+                <option value="Group A">Group A</option>
+                <option value="Group B">Group B</option>
+                <option value="Group C">Group C</option>
+                <option value="Group D">Group D</option>
+                <option value="Group E">Group E</option>
+            </select>
+        </div>
+
+      <p class="register">
+        <a href="https://wa.me/+233509741348">
+        Contact for Logins   
+         </a>   
+        <button class="reset" type="reset">Reset</button>
+      </p>
+
+      <p>
+    <a href="courses.html">  
+    <button type="submit">LOGIN</button>
+       </a>
+      </p>
+
+    </fieldset>
+   
+    <button class="proceed"><a href="courses.html">Proceed as guest</a></button>
+
+    </form> 
+</body>
+</html>

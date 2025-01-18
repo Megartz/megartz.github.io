@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+}
+body {
+    background-image: url(blur.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    border-color: rgba(0, 0, 0, 0.568);
+    box-shadow: black 3px 3px 5px;
+    background-color: rgba(255, 255, 255, 0.692);
+}
+.details {
+    margin-right: 1%;
+    width: 7cm;
+    height: 0.7cm;
+}
+fieldset {
+    box-shadow: black -3px 3px 5px;
+}
+legend {
+    color: black;
+    font-weight: 700;
+}
+input {
+    border-color: rgba(0, 0, 0, 0.651);
+    border-radius: 5px;
+}
